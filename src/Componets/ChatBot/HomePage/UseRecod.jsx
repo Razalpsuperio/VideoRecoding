@@ -75,7 +75,7 @@ const stopRecording = () => {
       {videoURL && (
         <div>
           <h3>Recorded Video:</h3>
-          <video  controls playsinline  ><source src={videoURL}  type="video/webm"/></video>
+          <video  controls playsinline  ><source src={videoURL}  type="video/mp4"/></video>
         </div>
       )}
     </div>
