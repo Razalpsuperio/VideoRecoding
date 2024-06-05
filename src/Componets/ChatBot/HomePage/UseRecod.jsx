@@ -40,7 +40,7 @@ const startRecording = async () => {
       }
     };
     mediaRecorderRef.current.onstop = () => {
-      const blob = new Blob(chunksRef.current, { type: 'video/webm' });
+      const blob = new Blob(chunksRef.current, { type: 'video/mp4' });
       const url = URL.createObjectURL(blob);
       setVideoURL(url);
       chunksRef.current = [];
