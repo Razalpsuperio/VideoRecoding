@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import ReactPlayer from 'react-player';
 
 const UseRecord = () => {
   const [recording, setRecording] = useState(false);
@@ -74,7 +75,7 @@ const stopRecording = () => {
       {videoURL && (
         <div>
           <h3>Recorded Video:</h3>
-          <video src={videoURL} controls  playsInline/>
+          <ReactPlayer url={videoURL} controls playsinline />
         </div>
       )}
     </div>
